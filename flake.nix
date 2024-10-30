@@ -25,6 +25,17 @@
 	  pkgs.git
         ];
 
+      homebrew = {
+        enable = true;
+	casks = [
+          "firefox"
+	  "the-unarchiver"
+	  "hammerspoon"
+	  "brave-browser"
+	  "vivaldi"
+	];
+	onActivation.cleanup = "zap";
+      };
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
       ];
