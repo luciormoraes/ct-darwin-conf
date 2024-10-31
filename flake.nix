@@ -61,7 +61,21 @@
         '';
 
       system.defaults = {
-        dock.autohide = true;
+        dock.autohide  = true;
+        dock.largesize = 64;
+        dock.persistent-apps = [
+          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "/Applications/Vivaldi.app"
+          "/Applications/Firefox.app"
+      #    "${pkgs.obsidian}/Applications/Obsidian.app"
+          "/System/Applications/Mail.app"
+          "/System/Applications/Calendar.app"
+        ];
+        finder.FXPreferredViewStyle = "clmv";
+        loginwindow.GuestEnabled  = false;
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
       };
 
       # Auto upgrade nix package and the daemon service.
