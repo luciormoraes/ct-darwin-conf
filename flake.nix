@@ -23,6 +23,9 @@
 	  pkgs.neovim
 	  pkgs.tmux
 	  pkgs.git
+	  pkgs.go
+	  pkgs.spotify
+	  pkgs.transmission_4
         ];
 
       homebrew = {
@@ -65,7 +68,8 @@
         dock.largesize = 64;
         dock.persistent-apps = [
           "${pkgs.alacritty}/Applications/Alacritty.app"
-          "/Applications/Vivaldi.app"
+          "${pkgs.spotify}/Applications/Spotify.app"
+	  "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
       #    "${pkgs.obsidian}/Applications/Obsidian.app"
           "/System/Applications/Mail.app"
