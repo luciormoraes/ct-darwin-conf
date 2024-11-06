@@ -26,6 +26,7 @@
 	  pkgs.go
 	  pkgs.spotify
 	  pkgs.transmission_4
+	  pkgs.anki-bin
         ];
 
       homebrew = {
@@ -73,6 +74,7 @@
           "${pkgs.spotify}/Applications/Spotify.app"
 	  "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
+      #    "${pkgs.anki}/Applications/Anki.app"
       #    "${pkgs.obsidian}/Applications/Obsidian.app"
           "/System/Applications/Mail.app"
           "/System/Applications/Calendar.app"
