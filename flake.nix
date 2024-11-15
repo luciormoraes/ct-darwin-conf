@@ -37,6 +37,7 @@
 	  "hammerspoon"
 	  "brave-browser"
 	  "vivaldi"
+	  "goland"
 	];
 	onActivation.cleanup = "zap";
 #	onActivation.autoUpdate = true;
