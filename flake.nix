@@ -40,8 +40,8 @@
 	  "goland"
 	];
 	onActivation.cleanup = "zap";
-#	onActivation.autoUpdate = true;
-#       onActivation.upgrade = true;
+	onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
       };
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
