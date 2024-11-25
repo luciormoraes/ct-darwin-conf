@@ -27,7 +27,6 @@
 	  pkgs.spotify
 	  pkgs.transmission_4
 	  pkgs.anki-bin
-	  pkgs.docker
         ];
 
       homebrew = {
