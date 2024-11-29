@@ -43,9 +43,9 @@
 	onActivation.autoUpdate = true;
         onActivation.upgrade = true;
       };
-      fonts.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-      ];
+      #fonts.packages = [
+      #  (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+      #];
 
       system.activationScripts.applications.text = let
         env = pkgs.buildEnv {
