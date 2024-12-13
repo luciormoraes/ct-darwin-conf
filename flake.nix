@@ -27,6 +27,8 @@
 	  pkgs.spotify
 	  pkgs.transmission_4
 	  pkgs.anki-bin
+	  pkgs.fish
+	  pkgs.helix
         ];
 
       homebrew = {
