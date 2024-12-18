@@ -29,6 +29,7 @@
 	  pkgs.anki-bin
 	  pkgs.fish
 	  pkgs.helix
+	  pkgs.exercism
         ];
 
       homebrew = {
