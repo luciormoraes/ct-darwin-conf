@@ -41,6 +41,7 @@
 	  "brave-browser"
 	  "vivaldi"
 	  "goland"
+	  "vlc"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
