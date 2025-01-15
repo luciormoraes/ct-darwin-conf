@@ -31,6 +31,7 @@
 	  pkgs.helix
 	  pkgs.exercism
 	  pkgs.ghostty
+	  pkgs.lsd
         ];
 
       homebrew = {
