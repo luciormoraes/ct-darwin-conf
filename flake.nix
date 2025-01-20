@@ -30,7 +30,7 @@
 	  pkgs.fish
 	  pkgs.helix
 	  pkgs.exercism
-	  pkgs.ghostty
+#	  pkgs.ghostty
 	  pkgs.lsd
         ];
 
@@ -79,7 +79,7 @@
         dock.largesize = 64;
         dock.persistent-apps = [
           "${pkgs.alacritty}/Applications/Alacritty.app"
-          "${pkgs.ghostty}/Applications/Ghostty.app"
+          #"${pkgs.ghostty}/Applications/Ghostty.app"
           "${pkgs.spotify}/Applications/Spotify.app"
 	  "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
