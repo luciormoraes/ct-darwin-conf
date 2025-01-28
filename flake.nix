@@ -32,6 +32,8 @@
 	  pkgs.exercism
 #	  pkgs.ghostty
 	  pkgs.lsd
+	  pkgs.gh
+	  pkgs.pandoc
         ];
 
       homebrew = {
