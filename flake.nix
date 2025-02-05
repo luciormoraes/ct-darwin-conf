@@ -30,7 +30,6 @@
 	  pkgs.fish
 	  pkgs.helix
 	  pkgs.exercism
-#	  pkgs.ghostty
 	  pkgs.lsd
 	  pkgs.gh
 	  pkgs.pandoc
@@ -46,6 +45,7 @@
 	  "vivaldi"
 	  "goland"
 	  "vlc"
+	  "ghostty"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
@@ -81,7 +81,7 @@
         dock.largesize = 64;
         dock.persistent-apps = [
           "${pkgs.alacritty}/Applications/Alacritty.app"
-          #"${pkgs.ghostty}/Applications/Ghostty.app"
+	  "/Applications/Ghostty.app"
           "${pkgs.spotify}/Applications/Spotify.app"
 	  "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
