@@ -33,6 +33,7 @@
 	  pkgs.lsd
 	  pkgs.gh
 	  pkgs.pandoc
+	  pkgs.vscode
         ];
 
       homebrew = {
