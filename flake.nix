@@ -82,6 +82,7 @@
         dock.largesize = 64;
         dock.persistent-apps = [
           "${pkgs.alacritty}/Applications/Alacritty.app"
+          "${pkgs.vscode}/Applications/Visual Studio Code.app"
 	  "/Applications/Ghostty.app"
           "${pkgs.spotify}/Applications/Spotify.app"
 	  "/Applications/Vivaldi.app"
