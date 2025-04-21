@@ -35,6 +35,8 @@
 	  pkgs.pandoc
 	  pkgs.vscode
 	  pkgs.python313
+	  pkgs.python313Packages.pip
+	  pkgs.gh
         ];
 
       homebrew = {
