@@ -37,6 +37,7 @@
 	  pkgs.python313
 	  pkgs.python313Packages.pip
 	  pkgs.gh
+	  pkgs.tree
         ];
 
       homebrew = {
@@ -50,6 +51,7 @@
 	  "goland"
 	  "vlc"
 	  "ghostty"
+	  "signal"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
