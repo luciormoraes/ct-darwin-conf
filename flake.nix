@@ -52,7 +52,8 @@
 	  "vlc"
 	  "ghostty"
 	  "signal"
-    "simple-comic"
+          "simple-comic"
+#          "hugo"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
