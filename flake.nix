@@ -38,6 +38,8 @@
 	  pkgs.python313Packages.pip
 	  pkgs.gh
 	  pkgs.tree
+	  pkgs.hugo
+#	  pkgs.android-tools
         ];
 
       homebrew = {
@@ -53,6 +55,7 @@
 	  "ghostty"
 	  "signal"
           "simple-comic"
+#	  "android-platform-tools"
 #          "hugo"
 	];
 	onActivation.cleanup = "zap";
