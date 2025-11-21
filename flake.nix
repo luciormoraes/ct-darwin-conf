@@ -39,6 +39,9 @@
 	  pkgs.gh
 	  pkgs.tree
 	  pkgs.hugo
+	  pkgs.whatsapp-for-mac
+	  pkgs.lua
+	  pkgs.luarocks
 #	  pkgs.android-tools
         ];
 
@@ -71,7 +74,7 @@
         env = pkgs.buildEnv {
           name = "system-applications";
 	  paths = config.environment.systemPackages;
-	  pathsToLink = "/Applications";
+	  pathsToLink = ["/Applications"];
 	};
       in
         pkgs.lib.mkForce ''
@@ -98,6 +101,7 @@
           "${pkgs.vscode}/Applications/Visual Studio Code.app"
 	  "/Applications/Ghostty.app"
           "${pkgs.spotify}/Applications/Spotify.app"
+	  "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
 	  "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
       #    "${pkgs.anki}/Applications/Anki.app"
