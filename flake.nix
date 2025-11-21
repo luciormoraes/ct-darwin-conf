@@ -39,6 +39,8 @@
 	  pkgs.slack
 	  pkgs.whatsapp-for-mac
 	  pkgs.brave
+	  pkgs.lua
+	  pkgs.luarocks
         ];
 
       homebrew = {
@@ -48,6 +50,7 @@
 	  "awscli-local"
 	  "hashicorp/tap/terraform"
 	  "gradle"
+	  "maven"
 	];
 	casks = [
           "firefox"
@@ -75,7 +78,7 @@
         env = pkgs.buildEnv {
           name = "system-applications";
 	  paths = config.environment.systemPackages;
-	  pathsToLink = "/Applications";
+	  pathsToLink = ["/Applications"];
 	};
       in
         pkgs.lib.mkForce ''
