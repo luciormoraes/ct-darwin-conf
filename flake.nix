@@ -23,7 +23,7 @@
 	  pkgs.neovim
 	  pkgs.tmux
 	  pkgs.git
-	  pkgs.go
+						#	  pkgs.go
 	  pkgs.spotify
 	  pkgs.transmission_4
 	  pkgs.anki-bin
@@ -36,7 +36,7 @@
 	  pkgs.vscode
 	  pkgs.python313
 	  pkgs.python313Packages.pip
-	  pkgs.gh
+						#	  pkgs.gh
 	  pkgs.tree
 	  pkgs.hugo
 	  pkgs.whatsapp-for-mac
