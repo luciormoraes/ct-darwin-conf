@@ -24,7 +24,7 @@
 	  pkgs.tmux
 	  pkgs.git
 						#	  pkgs.go
-	  pkgs.spotify
+						#	  pkgs.spotify
 	  pkgs.transmission_4
 	  pkgs.anki-bin
 	  pkgs.fish
@@ -43,6 +43,7 @@
 	  pkgs.lua
 	  pkgs.luarocks
 #	  pkgs.android-tools
+    pkgs.slack
         ];
 
       homebrew = {
@@ -97,13 +98,15 @@
         dock.autohide  = true;
         dock.largesize = 64;
         dock.persistent-apps = [
+          "/Applications/Ghostty.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
           "${pkgs.vscode}/Applications/Visual Studio Code.app"
-	  "/Applications/Ghostty.app"
-          "${pkgs.spotify}/Applications/Spotify.app"
-	  "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
-	  "/Applications/Vivaldi.app"
+          #"${pkgs.spotify}/Applications/Spotify.app"
+          "${pkgs.slack}/Applications/Slack.app"
+          "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
+          "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
+          "/Applications/Battle.net.app"
       #    "${pkgs.anki}/Applications/Anki.app"
       #    "${pkgs.obsidian}/Applications/Obsidian.app"
           "/System/Applications/Mail.app"
