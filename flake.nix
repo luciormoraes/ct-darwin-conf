@@ -58,7 +58,8 @@
 	  "vlc"
 	  "ghostty"
 	  "signal"
-          "simple-comic"
+     "simple-comic"
+     "spotify"
 #	  "android-platform-tools"
 #          "hugo"
 	];
@@ -107,6 +108,7 @@
           "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
           "/Applications/Battle.net.app"
+          "/Applications/Spotify.app"
       #    "${pkgs.anki}/Applications/Anki.app"
       #    "${pkgs.obsidian}/Applications/Obsidian.app"
           "/System/Applications/Mail.app"
