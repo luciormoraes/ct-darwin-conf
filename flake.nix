@@ -105,6 +105,7 @@
           #"${pkgs.spotify}/Applications/Spotify.app"
           "${pkgs.slack}/Applications/Slack.app"
           "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
+          "/Applications/Signal.app"
           "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
           "/Applications/Battle.net.app"
