@@ -43,7 +43,9 @@
 	  pkgs.lua
 	  pkgs.luarocks
 #	  pkgs.android-tools
-    pkgs.slack
+     pkgs.slack
+						#	  pkgs.emacs
+	  pkgs.emacs-gtk
         ];
 
       homebrew = {
@@ -102,6 +104,8 @@
           "/Applications/Ghostty.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
           "${pkgs.vscode}/Applications/Visual Studio Code.app"
+          "${pkgs.emacs-gtk}/Applications/Emacs.app"
+          "${pkgs.anki-bin}/Applications/Anki.app"
           #"${pkgs.spotify}/Applications/Spotify.app"
           "${pkgs.slack}/Applications/Slack.app"
           "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
