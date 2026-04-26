@@ -46,6 +46,7 @@
      pkgs.slack
 						#	  pkgs.emacs
 	  pkgs.emacs-gtk
+	  pkgs.nmap
         ];
 
       homebrew = {
