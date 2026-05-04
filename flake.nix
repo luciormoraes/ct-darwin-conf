@@ -63,6 +63,7 @@
 	  "signal"
      "simple-comic"
      "spotify"
+	  "claude-code"
 #	  "android-platform-tools"
 #          "hugo"
 	];
