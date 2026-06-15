@@ -64,6 +64,7 @@
      "simple-comic"
      "spotify"
 	  "claude-code"
+	  "yacreader"
 #	  "android-platform-tools"
 #          "hugo"
 	];
