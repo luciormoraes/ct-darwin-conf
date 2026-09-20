@@ -33,13 +33,13 @@
 	  pkgs.lsd
 	  pkgs.gh
 	  pkgs.pandoc
-	  pkgs.vscode
+						#	  pkgs.vscode
 	  pkgs.python313
 	  pkgs.python313Packages.pip
 						#	  pkgs.gh
 	  pkgs.tree
 	  pkgs.hugo
-	  pkgs.whatsapp-for-mac
+#	  pkgs.whatsapp-for-mac
 	  pkgs.lua
 	  pkgs.luarocks
 #	  pkgs.android-tools
@@ -47,9 +47,24 @@
 						#	  pkgs.emacs
 	  pkgs.emacs-gtk
 	  pkgs.nmap
+	  pkgs.postgresql_18
         ];
 
-      homebrew = {
+    launchd.daemons.postgresql = {
+  serviceConfig = {
+    ProgramArguments = [
+      "${pkgs.postgresql_18}/bin/postgres"
+      "-D" "/var/lib/postgresql/18"
+    ];
+    RunAtLoad = true;
+    KeepAlive = true;
+    UserName = "lucimoraes";
+    StandardOutPath = "/var/lib/postgresql/18/postgres.log";
+    StandardErrorPath = "/var/lib/postgresql/18/postgres.log";
+  };
+};
+	
+	homebrew = {
         enable = true;
 	casks = [
           "firefox"
@@ -65,6 +80,8 @@
      "spotify"
 	  "claude-code"
 	  "yacreader"
+	  "visual-studio-code"
+    "whatsapp"
 #	  "android-platform-tools"
 #          "hugo"
 	];
@@ -106,12 +123,14 @@
         dock.persistent-apps = [
           "/Applications/Ghostty.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
-          "${pkgs.vscode}/Applications/Visual Studio Code.app"
+          #"${pkgs.vscode}/Applications/Visual Studio Code.app"
+          "/Applications/Visual Studio Code.app"
           "${pkgs.emacs-gtk}/Applications/Emacs.app"
           "${pkgs.anki-bin}/Applications/Anki.app"
           #"${pkgs.spotify}/Applications/Spotify.app"
           "${pkgs.slack}/Applications/Slack.app"
-          "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
+ #         "${pkgs.whatsapp-for-mac}/Applications/Whatsapp.app"
+          "/Applications/WhatsApp.app"
           "/Applications/Signal.app"
           "/Applications/Vivaldi.app"
           "/Applications/Firefox.app"
